@@ -4,6 +4,12 @@
     margin: 0px;
     padding: 0px;
 }
+
+html{
+    width: 100%;
+    
+}
+
 body{
     background-color: #EEEEEE;
     overflow-y: scroll;
@@ -170,51 +176,41 @@ button:active{
 
 
 
-@media only screen and (max-width: 772px){
+@media only screen and (max-width: 992px){
     .model{
         display: none;
     }
-    nav ul li a{
-        display: none;
-    }
+}
 
-    .logo{
-        align-items: center;
-        justify-content: center;
-        padding-left: 50px;
-    }
-
+@media only screen and (max-width: 772px){
     .text-container{
         width: 100%;
-        padding: 0px;
+        margin-left: 35px;
+        text-align:  center;
     }
 
-    .text-container p:nth-child(1){
-        text-align: center;
-        
-    }
-
-    .text-container p:nth-child(2){
-        text-align: center;
-        margin-left: 45px;
-    }
-
-    .text-container p:nth-child(3){
-        text-align: center;
-        margin-left: 45px;
-    }
-
-    .buttons{
-        margin-left: 205px;
+    .about-text{
+        width: 450px;
     }
 
     .about-container h1{
         text-align: center;
-        margin-right: 100px;
+        margin-right: 130px;
+    }
+
+    nav h1{
+        margin-left: 45px;
     }
     
-    .about-text{
-        height: 140px;
-        width: 500px;
+    nav li{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .text-container{
+        text-align: center;
+        width: 100%;
     }
 }
+
